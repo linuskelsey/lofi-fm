@@ -53,8 +53,7 @@ async def on_voice_state_update(member, before, after):
 async def join_and_play(vc):
     try:
         vc_client = await vc.connect()
-        lo_fi_url = "https://www.youtube.com/watch?v=0kkDatuTzqE"  # Replace with your desired lo-fi stream
-        audio_source = get_ytdl_source(lo_fi_url)
+        lo_fi_url = "https://www.youtube.com/watch?v=vCKbzlNQ_K8"  # Replace with your desired video or stream
         vc_client.play(discord.FFmpegPCMAudio(audio_source, **ffmpeg_options))
 
         # Stay in the VC until it becomes empty
